@@ -5,23 +5,33 @@
   font-style: normal;
 }
 body {
-  background-color: #050020;
+  /* background-color: #050020; */
+  background: linear-gradient(90deg, rgba(0, 48, 136, 0.8) -60%, rgba(5, 0, 32, 0.8) 100%), /* Horizontal gradient */
+              linear-gradient(0deg, rgba(255, 192, 203, 0.8) -10%, rgba(5, 0, 32, 0.8) 100%); /* Vertical gradient */
+  background-blend-mode: screen;
 }
 
 p {
   font-family: 'New York';
-  color: #b7b6be;
+  color: #cfced4;
   font-size: 16px;
   font-weight: bold;
   display: flex;
   justify-content: center;
 }
-
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  
+}
 .card{
-  border : 1px solid rgb(161, 161, 161);
+  border : 3px solid rgb(161, 161, 161);
   border-radius : 10px;
-  padding : 10px;
-  max-width: fit-content;
+  width: 500px; 
+  height: 300px;
+  overflow: hidden;
   font-family: 'arial';
   color: rgb(1, 27, 155);
 }
@@ -31,35 +41,49 @@ p {
   color: rgb(161, 161, 161);
 }
 
+.cardImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 nav {
   display: flex;
   align-items: center;
+  justify-content: center; 
+  gap: 10px;
   overflow: hidden;
   margin-bottom: 15px;
   border-bottom: 1px solid rgb(161, 161, 161);
 }
 
 nav img {
-  float: left;
-  width: 60px;
-  height: 60px;
+  position: relative;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  margin-left: 40px;
 }
 
 nav a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
-  border: 1px solid #050020;
+  border: 1px solid transparent;
   border-radius: 40%;
-  margin-left: 12px;
+  margin-left: 80px;
+  width: 90px;
+}
+
+nav a:first-child {
+  margin-left: 10px; 
 }
 
 nav a:hover {
-  background-color: #0c0246;
+  background-color: rgba(1, 69, 170, 0.8);
   color: #f2f2f2;
 }
 
@@ -69,12 +93,14 @@ nav a.active {
 }
 
 header{
-  color: rgb(205, 205, 205);
+  color: white;
   font-family: 'New York';
   padding: 10px;
 }
 
 header p{
+  color: white;
+  font-size: 20px;
   font-weight: bold;
   margin-right: 50%;
 }
@@ -149,6 +175,6 @@ header p{
 
 
 .circle-container :hover{
-  background-color: #0c0246;
-  color: #f2f2f2;
+  background-color: #1f1363;
+    color: #f2f2f2;
 }
