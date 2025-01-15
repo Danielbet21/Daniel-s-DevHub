@@ -6,8 +6,17 @@
 }
 body {
   background-color: #050020;
-
 }
+
+p {
+  font-family: 'New York';
+  color: #b7b6be;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
 .card{
   border : 1px solid rgb(161, 161, 161);
   border-radius : 10px;
@@ -23,6 +32,8 @@ body {
 }
 
 nav {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   margin-bottom: 15px;
   border-bottom: 1px solid rgb(161, 161, 161);
@@ -39,14 +50,17 @@ nav a {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
+  border: 1px solid #050020;
+  border-radius: 40%;
+  margin-left: 12px;
 }
 
 nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #0c0246;
+  color: #f2f2f2;
 }
 
 nav a.active {
@@ -62,4 +76,79 @@ header{
 
 header p{
   font-weight: bold;
+  margin-right: 50%;
+}
+
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid transparent; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.circle {
+  position: absolute;
+  width: 65px;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%; 
+  font-size: 12px;
+  text-align: center;
+  border : 1px solid rgb(161, 161, 161);
+  border-radius: 40%;
+}
+
+.circle:nth-child(1) { transform: translate(0px, -140px); }    /*C*/
+.circle:nth-child(2) { transform: translate(140px, -70px); }   /*javaScript*/
+.circle:nth-child(3) { transform: translate(140px, 10px); }    /*React*/
+.circle:nth-child(4) { transform: translate(120px, 90px); }    /*git*/
+.circle:nth-child(5) { transform: translate(1px, 110px); }     /*flask*/ 
+.circle:nth-child(6) { transform: translate(-120px, 90px); }  /*java*/
+.circle:nth-child(7) { transform: translate(-140px, 10px); }   /*vue.js*/
+.circle:nth-child(8) { transform: translate(-140px, -70px); }  /*python*/
+.circle:nth-child(9) { transform: translate(90px, -140px); }   /*mongo*/
+.circle:nth-child(10) { transform: translate(-90px, -140px); } /*docker*/
+.circle:nth-child(11) { transform: translate(55px, 50px); }    /*github*/
+.circle:nth-child(12) { transform: translate(-55px, 50px); }   /*postgresql*/
+.circle:nth-child(13) { transform: translate(50px, -70px); }   /*TDD*/
+.circle:nth-child(14) { transform: translate(-50px, -70px); }  /*CI/CD*/
+.circle:nth-child(15) { transform: translate(0px, -9px); }       /*jira*/
+
+
+.circle-soft {
+  position: absolute;
+  width: 85px;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%; 
+  font-size: 12px;
+  text-align: center;
+  border : 1px solid rgb(161, 161, 161);
+  border-radius: 40%;
+}
+.circle-soft:nth-child(1) { transform: translate(0px, -110px); }     
+.circle-soft:nth-child(2) { transform: translate(120px, -70px); }  
+.circle-soft:nth-child(3) { transform: translate(140px, 10px); }      
+.circle-soft:nth-child(4) { transform: translate(120px, 90px); }  
+.circle-soft:nth-child(5) { transform: translate(1px, 110px); }      
+.circle-soft:nth-child(6) { transform: translate(-110px, 100px); } 
+.circle-soft:nth-child(7) { transform: translate(-140px, 10px); }     
+.circle-soft:nth-child(8) { transform: translate(-120px, -70px); } 
+
+
+.circle-container :hover{
+  background-color: #0c0246;
+  color: #f2f2f2;
 }

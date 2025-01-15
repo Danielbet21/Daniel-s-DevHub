@@ -1,5 +1,9 @@
 
-function Card({ title, description }) {
+function Card() {
+//   const cards = [
+//     { title: 'First Card', description: 'This is the first description' },
+//     { title: 'Second Card', description: 'This is the second description' },
+//   ];
   return (
     <div className="card">
             <img className="cardImg" src="" alt="this is the first img"/>
