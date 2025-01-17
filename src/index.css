@@ -138,12 +138,22 @@ header p{
   font-weight: bold;
   margin-right: 50%;
 }
+#skills{
+  margin-top: 90px;
+}
+#projects{
+  margin-top: 90px;
+}
+.contact-title{
+  margin-top: 90px;
+}
 
 .Contact{
   display: flex;
   justify-content: center;
   gap: 50px;
   margin-bottom: 10px;
+  margin-top: 10px;
   color: rgb(255, 252, 252);
   font-family: calibri;
 }
