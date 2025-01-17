@@ -7,7 +7,8 @@ function Softtag() {
                       'Adaptability',
                       'Creativity',
                       'Attention to Detail',
-                      'Continuous Learning']
+      'Continuous Learning',
+      'Time Management',]
       
         return (
           <div className="circle-container">

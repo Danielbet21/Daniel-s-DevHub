@@ -27,6 +27,7 @@ p {
   
 }
 .card{
+  position: relative;
   border : 3px solid rgb(161, 161, 161);
   border-radius : 10px;
   width: 500px; 
@@ -38,13 +39,46 @@ p {
 
 .cardDescription{
   font-size: 14px;
-  color: rgb(161, 161, 161);
+  color: rgb(201, 193, 193);
+  font-family: 'arial';
 }
 
 .cardImg{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.card:hover .cardImg {
+  filter: blur(5px); /* Blur the image on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  z-index: 2;
+}
+
+.card:hover .overlay {
+  opacity: 1; 
+}
+
+.cardTitle, .cardDescription {
+  margin: 0;
+  padding: 10px;
+  z-index: 3; /* Ensure the text is on top of the overlay */
 }
 
 nav {
@@ -103,6 +137,15 @@ header p{
   font-size: 20px;
   font-weight: bold;
   margin-right: 50%;
+}
+
+.Contact{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 10px;
+  color: rgb(255, 252, 252);
+  font-family: calibri;
 }
 
 .circle-container {
@@ -172,6 +215,8 @@ header p{
 .circle-soft:nth-child(6) { transform: translate(-110px, 100px); } 
 .circle-soft:nth-child(7) { transform: translate(-140px, 10px); }     
 .circle-soft:nth-child(8) { transform: translate(-120px, -70px); } 
+.circle-soft:nth-child(9) { transform: translate(0px, 0px); } 
+
 
 
 .circle-container :hover{

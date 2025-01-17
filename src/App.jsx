@@ -3,6 +3,7 @@ import Softtag from './Softtag';
 import Hardtag from './Hardtag';
 import Card from './Card';
 import mail from './assets/mail.png';
+import commingSoon from './assets/soon.svg';
 
 function App() {
 
@@ -19,13 +20,9 @@ function App() {
       <p>Projects</p>
 
       <div className="cards">
-        <Card title="aa" description="this is the first description" imgRoute={mail} />
-      <Card title="aa" description="this is the first description" imgRoute={mail}/>
-      <Card title="aa" description="this is the first description" imgRoute={mail}/>
-      <Card title="aa" description="this is the first description" imgRoute={mail}/>
-      <Card title="aa" description="this is the first description" imgRoute={mail}/>
-      <Card title="aa" description="this is the first description" imgRoute={mail}/>
-        
+        <Card title="Mail Client" description="An intuitive email client that combines advanced filtering, sender-based message grouping, and AI-powered daily summaries for a seamless user experience." imgRoute={mail} />
+        <Card title="Ambulo" description="Ambulo is a Flutter app that recommends trails based on your profile and history, provides weather and trail alerts, allows group trip planning with shared equipment lists, and integrates GPX files for detailed navigation." imgRoute={commingSoon} />
+
       </div>
       
     </>
